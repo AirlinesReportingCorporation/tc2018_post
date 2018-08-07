@@ -1,0 +1,56 @@
+body, body .byline {
+  font-family: $secondary-font;
+}
+
+body .rtf strong, body a, .ctaLink {
+  font-family: $secondary-font-bold;
+}
+
+body h1, body h2, body h3, body h4, body h5, body h6, .jumbotron--image .block-header, .ctaLink {
+  font-family: $primary-font-bold !important;
+  line-height: 1.3 !important;
+  text-transform: uppercase;
+}
+
+.btn--link, footer .rtf .footer-rtf-links a, .basic-text--grey a {
+  color: #16BDC8;
+}
+
+footer .rtf .footer-rtf-links a {
+  color: #16BDC8 !important;
+}
+
+footer .add-content p {
+	margin-bottom: 0;
+}
+
+.primary-nav nav > ul > li > a.active::after, .primary-nav nav > ul > li > a.cur-location::after {
+  border-bottom-color: #16BDC8;
+}
+
+a.sticky-nav__link, body a.stick-nav__link:hover, body a.stick-nav__link:focus {
+    font-size: 1rem;
+}
+
+footer.travelconnect {
+  background: #2A2F76;
+}
+
+footer.travelconnect .footer-links-social li a::before,
+footer.travelconnect .footer-links-social li a.icon-facebook:before,
+footer .footer-links-social li a.icon-instagram:before,
+footer.travelconnect .footer-links-social li a.icon-linkedin:before {
+  color: #ffffff;
+}
+
+.footer-links-social,
+footer .add-content {
+  display: none;
+}
+
+footer.travelconnect .footer-links-social li a.icon-twitter,
+footer.travelconnect .footer-links-social li a.icon-facebook,
+footer .footer-links-social li a.icon-instagram,
+footer.travelconnect .footer-links-social li a.icon-linkedin {
+  background: transparent !important;
+}

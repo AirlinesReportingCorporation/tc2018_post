@@ -1,0 +1,23 @@
+@media screen and (max-width: 960px){
+  .primary-nav nav > ul > li a, .primary-nav nav > ul > li a:hover {
+    color: #EE4495;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  footer .footer-inside .rtf {
+    left: 0;
+    text-align: center;
+    width: 100%;
+  }
+  footer.travelconnect .footer-inside .footer-links-social {
+			right: 185px !important;
+	}
+}
+
+@media screen and (min-width: 768px){
+  .jumbotron {
+      margin-top: 0;
+  }
+
+}

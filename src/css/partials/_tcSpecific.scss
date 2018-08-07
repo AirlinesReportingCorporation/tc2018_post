@@ -1,0 +1,110 @@
+.navcontainer, .primary-nav {
+  background: transparent;
+  z-index: 3;
+}
+
+[class=" 6433"] {
+  .tcContainer.tcContainerTop {
+    top: -94px;
+    bottom: -94px;
+    position: relative;
+    z-index: 2;
+    height: 606px;
+  }
+  .primary-nav__before, .primary-nav__after {
+    display: none;
+  }
+  .primary-nav .travelconnectlogo {
+    color: #ffffff;
+  }
+  .primary-nav nav > ul > li > a {
+    color: #ffffff;
+  }
+  .primary-nav .travelconnectlogo {
+    font-size: 1.6rem;
+  }
+}
+
+.tcContainer {
+  position: relative;
+  .tcJumbotron {
+    position: relative;
+    background: url("https://www2.arccorp.com/globalassets/home2/2018/postsite/tcJumbo3.jpg") center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 700px;
+  }
+  .highlights {
+    position: relative;
+    background: url("https://www2.arccorp.com/globalassets/home2/2018/postsite/tcJumbo1.jpg") center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 60px 0;
+    .highlights-body {
+      position: relative;
+      z-index:10;
+      color: #ffffff;
+    }
+    .sticky-title {
+      font-size: 5rem;
+      font-family: $primary-font-bold, $secondary-font-bold, helvetica, arial, sans-serif;
+    }
+    .sticky-subtitle {
+      font-size: 3rem;
+      font-family: $secondary-font-bold, helvetica, arial, sans-serif;
+    }
+  }
+  .statsContainer {
+    position: relative;
+    background:#2A2f76;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 0;
+    .stats {
+      color: #ffffff;
+      font-size: 4rem;
+      font-family: $primary-font-bold, $secondary-font-bold, helvetica, arial, sans-serif;
+      padding: 10px 0;
+    }
+    .stats-title {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+    }
+  }
+  .background-opacity {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 2;
+    content: '';
+    max-height: 100%;
+    background: #000;
+    background: linear-gradient(to bottom, transparent 30%, #000 100%);
+    background: -webkit-linear-gradient(top, transparent 30%, #000 100%);
+    &.background-greenblue {
+      background: $teal;
+      background: -webkit-linear-gradient(to bottom right, $blue, $teal);
+      background: -o-linear-gradient(to bottom right, $blue, $teal);
+      background: -moz-linear-gradient(to bottom right, $blue, $teal);
+      background: linear-gradient(to bottom right, $blue, $teal);
+      opacity: 0.6;
+    }
+    &.background-blackblue {
+      background: $teal;
+      background: -webkit-linear-gradient(to bottom right, #333333, $teal);
+      background: -o-linear-gradient(to bottom right, #333333, $teal);
+      background: -moz-linear-gradient(to bottom right, #333333, $teal);
+      background: linear-gradient(to bottom right, #333333, $teal);
+      opacity: 0.6;
+    }
+    &.background-purpleblue {
+      background: $teal;
+      background: -webkit-linear-gradient(to bottom right, $pink, $blue);
+      background: -o-linear-gradient(to bottom right, $pink, $blue);
+      background: -moz-linear-gradient(to bottom right, $pink, $blue);
+      background: linear-gradient(to bottom right, $pink, $blue);
+      opacity: 0.6;
+    }
+  }
+}
