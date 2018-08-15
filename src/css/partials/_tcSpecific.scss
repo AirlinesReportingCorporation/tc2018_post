@@ -1,14 +1,17 @@
 .sticky-top {
-  position:sticky;
+  position: sticky;
   top: 0;
 }
 
-.navcontainer, .primary-nav {
+.navcontainer,
+.primary-nav {
   background: transparent;
   z-index: 3;
 }
 
-[class=" 6433"], [class=" 10290"] {
+[class=" 6433"],
+[class=" 10290"],
+[class=" 9050"] {
   .tcContainer.tcContainerTop {
     top: -94px;
     bottom: -94px;
@@ -16,17 +19,26 @@
     z-index: 2;
     height: 606px;
   }
-  .primary-nav__before, .primary-nav__after {
+
+  .primary-nav__after,
+  .primary-nav__before {
     display: none;
   }
+
   .primary-nav .travelconnectlogo {
     color: #ffffff;
   }
+
   .primary-nav nav > ul > li > a {
     color: #ffffff;
   }
+
   .primary-nav .travelconnectlogo {
     font-size: 1.6rem;
+  }
+
+  .primary-nav .hamburger {
+    color: $white;
   }
 }
 
@@ -39,6 +51,7 @@
   }
 
   .ctaBtn {
+    min-width: 180px;
     border: none;
     background-image: $teal;
     background-image: -webkit-linear-gradient(to right, $green 0%, $teal 100%, $teal 100%);
@@ -48,10 +61,23 @@
     transition: 0.5s;
     background-size: 200% auto;
     background-position: center;
+
+    &.ctaBtn-purple {
+      background-image: $pink;
+      background-image: -webkit-linear-gradient(to right, $blue 0%, $pink 100%, $pink 100%);
+      background-image: -o-linear-gradient(to right, $blue 0%, $pink 100%, $pink 100%, $pink 100%);
+      background-image: -moz-linear-gradient(to right, $blue 0%, $pink 100%, $pink 100%, $pink 100%);
+      background-image: linear-gradient(to right, $blue 0%, $pink 100%, $pink 100%, $pink 100%);
+    }
+
     &:hover {
       box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
       background-position: right;
     }
+  }
+
+  .ctaBtn-spacer {
+    margin: 0 5px;
   }
 
   .tcJumbotron {
@@ -63,25 +89,29 @@
     background-position-x: 250px;
     background-position-y: 200px;
   }
+
   .tcJumbotron-container {
     position: relative;
     display: table;
     vertical-align: middle;
     height: 100%;
-    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
     z-index: 3;
     text-align: center;
     color: #ffffff;
   }
+
   .tcJumbotron-content {
     display: table-cell;
     vertical-align: middle;
-    max-width: 600px;
   }
+
   .tcJumbotron-title {
-    font-size: 5rem;
+    font-size: 4rem;
     color: #ffffff;
   }
+
   .tcJumbotron-content {
     font-size: 1.2rem;
   }
@@ -90,24 +120,54 @@
     position: relative;
     background: #ffffff;
     text-align: center;
-    a {
+    padding: 60px 0;
+
+    a.icon-social {
       display: block;
       padding: 60px 0;
-      color: #d4d4d4;
+      color: $darkgray;
       font-size: 2rem;
+
       &:hover {
         color: $teal;
       }
+    }
+
+    .hashtag {
+      color: $teal;
+      font-size: 3.2rem;
+      font-family: Oswald-Bold, SourceSansPro-Bold, helvetica, arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+
+      &:hover {
+        color: $teal;
+        cursor: pointer;
+      }
+    }
+
+    .social-subtitle {
+      border-top: 4px solid $teal;
+      color: $darkgray;
+      text-transform: uppercase;
+      font-family: SourceSansPro-Bold, SourceSansPro-Regular, helvetica, arial, sans-serif;
+      font-size: 1.5rem;
+      max-width: 200px;
+      margin: 0 auto;
+      padding-top: 30px;
     }
   }
 
   .awards {
     background: $teal;
     padding: 60px 0;
+    overflow: hidden;
+
     .awardwinner-container {
       position: relative;
-      margin: 0px auto;
+      margin: 0 auto;
       padding: 10px;
+
       i {
         border-radius: 50%;
         font-family: 'fontawesome';
@@ -121,13 +181,28 @@
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
       }
     }
+
+    .awardwinner-header {
+      h3,
+      small {
+        color: $blue;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+      }
+    }
+
     img {
       display: block;
+      width: 100%;
     }
+
     .awardwinner-content {
       background: #ffffff;
       color: #333333;
       padding: 25px 35px;
+      min-height: 455px;
     }
   }
 
@@ -137,40 +212,51 @@
     background-size: cover;
     background-attachment: fixed;
     padding: 60px 0;
+
     .highlights-body {
       position: relative;
-      z-index:10;
+      z-index: 10;
       color: #ffffff;
     }
 
+    .highlights-inner {
+      padding: 20px;
+      margin-bottom: 20px;
+    }
   }
+
   .sticky-title {
     font-size: 5rem;
     font-family: $primary-font-bold, $secondary-font-bold, helvetica, arial, sans-serif;
   }
+
   .sticky-subtitle {
     font-size: 3rem;
     font-family: $secondary-font-bold, helvetica, arial, sans-serif;
   }
+
   .statsContainer {
     position: relative;
     background: #2A2f76 url("https://arctravelconnect.com/globalassets/home2/2018/homepage/highlights-pattern-image.jpg") center center;
     background-size: cover;
     color: #ffffff;
     text-align: center;
-    overflow:hidden;
+    overflow: hidden;
     padding: 60px 0;
+
     .stats {
       color: #ffffff;
       font-size: 4rem;
       font-family: $primary-font-bold, $secondary-font-bold, helvetica, arial, sans-serif;
       padding: 10px 0;
     }
+
     .stats-title {
       font-size: 1.5rem;
       text-transform: uppercase;
     }
   }
+
   .background-opacity {
     position: absolute;
     width: 100%;
@@ -183,6 +269,7 @@
     background: #000;
     background: linear-gradient(to bottom, transparent 30%, #000 100%);
     background: -webkit-linear-gradient(top, transparent 30%, #000 100%);
+
     &.background-greenblue {
       background: $teal;
       background: -webkit-linear-gradient(to bottom right, $blue, $teal);
@@ -191,6 +278,7 @@
       background: linear-gradient(to bottom right, $blue, $teal);
       opacity: 0.6;
     }
+
     &.background-blackblue {
       background: $teal;
       background: -webkit-linear-gradient(to bottom right, #333333, $teal);
@@ -199,6 +287,7 @@
       background: linear-gradient(to bottom right, #333333, $teal);
       opacity: 0.6;
     }
+
     &.background-purpleblue {
       background: $teal;
       background: -webkit-linear-gradient(to bottom right, $pink, $blue);
@@ -207,6 +296,7 @@
       background: linear-gradient(to bottom right, $pink, $blue);
       opacity: 0.6;
     }
+
     &.background-blue {
       background: $blue;
       opacity: 0.8;

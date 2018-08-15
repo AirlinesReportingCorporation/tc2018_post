@@ -1,23 +1,89 @@
-@media screen and (max-width: 960px){
-  .primary-nav nav > ul > li a, .primary-nav nav > ul > li a:hover {
+@media screen and (max-width: 960px) {
+  .primary-nav nav > ul > li a,
+  .primary-nav nav > ul > li a:hover {
     color: #EE4495;
   }
 }
-
 @media screen and (min-width: 960px) {
   footer .footer-inside .rtf {
     left: 0;
     text-align: center;
     width: 100%;
   }
-  footer.travelconnect .footer-inside .footer-links-social {
-			right: 185px !important;
-	}
-}
 
-@media screen and (min-width: 768px){
-  .jumbotron {
-      margin-top: 0;
+  footer.travelconnect .footer-inside .footer-links-social {
+    right: 185px !important;
+  }
+}
+@media screen and (max-width: 990px) {
+  .tcContainer {
+    .sticky-title {
+      font-size: 2.4rem;
+    }
+
+    .sticky-subtitle {
+      font-size: 1.8rem;
+    }
+
+    .highlights .highlights-inner {
+      padding: 0;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .sticky-top {
+    position: relative;
   }
 
+  .tcContainer {
+    .awards h1,
+    .sticky-title {
+      font-size: 2.5rem;
+    }
+
+    .sticky-subtitle {
+      font-size: 2rem;
+    }
+  }
+}
+@media screen and (max-width:768px) {
+  .highlights-inner h2 {
+    font-size: 1.5rem;
+  }
+
+  .tcContainer .tcSocial .hashtag {
+    font-size: 2rem;
+  }
+
+  .tcContainer .tcJumbotron-content {
+    padding: 20px;
+  }
+
+  .tcContainer .tcJumbotron-title {
+    font-size: 3rem;
+  }
+
+  .tcContainer .tcJumbotron-container .ctaBtn {
+    margin-bottom: 0;
+  }
+
+  .ctaBtn-spacer {
+    display: none;
+  }
+
+  [class=" 6433"] .primary-nav .travelconnectlogo,
+  [class=" 10290"] .primary-nav .travelconnectlogo {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .tcContainer .tcSocial .hashtag {
+    font-size: 1.4rem;
+    letter-spacing: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    margin-top: 0;
+  }
 }
