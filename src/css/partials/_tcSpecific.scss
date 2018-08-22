@@ -158,6 +158,40 @@
     }
   }
 
+  .tcQuote {
+    background: url('https://www2.arccorp.com/globalassets/home2/2018/postsite/tcJumbo2.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 60px 0;
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-family: SourceSansPro-Regular,helvetica,arial,sans-serif !important;
+
+    .tcQuote-title {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: Oswald-Bold, SourceSansPro-Bold, helvetica, arial, sans-serif;
+      margin-bottom: 60px;
+      font-size: 2.6rem;
+      .travelconnect-title::after {
+        font-size: 1.5rem;
+        content: "\e920";
+        font-family: 'icomoon' !important;
+        margin-left: 10px;
+      }
+
+    }
+    .tcQuoteItem {
+      position: relative;
+      min-height: 360px;
+    }
+    .quote-name{
+      position: absolute;
+      bottom: 0;
+      font-size: 1.2rem;
+    }
+  }
+
   .awards {
     background: $teal;
     padding: 60px 0;
