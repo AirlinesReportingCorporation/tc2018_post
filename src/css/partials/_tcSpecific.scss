@@ -9,6 +9,35 @@
   z-index: 3;
 }
 
+.tcHomepage {
+  position: relative;
+  .verticalNavigation {
+    position: fixed;
+    z-index: 4;
+    text-transform: uppercase;
+    color: #ffffff;
+    top: 45%;
+    left: 30px;
+
+    .veriticalNavItem {
+      cursor: pointer;
+      margin-bottom: 10px;
+      opacity: .6;
+      &:hover {
+        opacity:1;
+      }
+    }
+    .navItemText {
+      font-family: SourceSansPro-Bold, SourceSansPro-Regular, helvetica, arial, sans-serif;
+      display: none;
+      padding-left: 10px;
+    }
+    i {
+      font-size: .8rem;
+    }
+  }
+}
+
 [class=" 6433"],
 [class=" 10290"],
 [class=" 9050"] {
@@ -52,6 +81,7 @@
 
   .ctaBtn {
     min-width: 180px;
+    text-shadow: none;
     border: none;
     background-image: $teal;
     background-image: -webkit-linear-gradient(to right, $green 0%, $teal 100%, $teal 100%);

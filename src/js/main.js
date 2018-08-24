@@ -39,4 +39,31 @@ function statsInit(){
   }
 }
 
+  var list = [];
+
+  list.push($("#stats").offset().top);
+  list.push($("#highlights").offset().top);
+  list.push($("#awards").offset().top);
+  list.push($("#quotes").offset().top);
+  list.push($("#social").offset().top);
+  list.push($("#contact").offset().top);
+
+
+  $(".veriticalNavItem").hover(function(){
+    $(this).find(".navItemText").show();
+  });
+
+  $(".veriticalNavItem").mouseleave(function(){
+    $(this).find(".navItemText").hide();
+  });
+
+  $(".veriticalNavItem").click(function(){
+    var scrollTo = $(this).data("id");
+    console.log(scrollTo);
+    $('html, body').animate({
+        scrollTop: $("#" + scrollTo).offset().top
+    }, 700);
+  });
+
+
 statsInit();
