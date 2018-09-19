@@ -1,0 +1,64 @@
+.socialWall {
+  max-width: 960px;
+  margin: 0 auto;
+
+  .widget-container .actions a, .widget-actions a, .sw-widget-container .actions a {
+    background: none;
+  }
+  .widget-container .actions a.retweet, .widget-actions a.retweet, .sw-widget-container .actions a.retweet {
+    border: none;
+  }
+}
+
+.wrapper.ng-scope, .widget-container .username, .widget-username, .sw-widget-container .username, .widget-container .username, .widget-username, .sw-widget-container .username .span a {
+  font-family: SourceSansPro-Regular
+}
+
+.wrapper.ng-scope .header  {
+  background-color: #ffffff !important;
+}
+
+.wrapper.ng-scope .controls {
+  background: transparent;
+}
+
+.widget-container .controls div.right, .widget-controls div.right, .sw-widget-container .controls div.right, .widget-container .controls div.left, .widget-controls div.left, .sw-widget-container .controls div.left, .widget-container .controls div.play, .widget-controls div.play, .sw-widget-container .controls div.play {
+  border: none !important;
+  &:hover {
+    background: #f6f6f6;
+  }
+}
+
+.widget-container .actions a, .widget-actions a, .sw-widget-container .actions a:hover {
+  background: #f6f6f6 !important;
+}
+
+span.sw-widget-icon-SWMore {
+    display: none !important;
+}
+.card.ng-scope .image img {
+  left: 0;
+}
+.widget-container .actions, .widget-actions, .sw-widget-container .actions {
+    bottom: -35px !important;
+    right: 0px !important;
+}
+.widget-container .content .text, .widget-content .widget-text, .sw-widget-container .content .text {
+  width: auto !important;
+}
+
+.widget-container .container, .widget-main-container, .sw-widget-container .container {
+  max-width: none;
+}
+
+.widget-container, .sw-widget-container {
+  padding-bottom: 30px;
+}
+
+.widget-container .content .text, .widget-content .widget-text, .sw-widget-container .content .text, .widget-container .userinfo, .widget-userinfo, .sw-widget-container .userinfo, .widget-userinfo {
+  margin: 1px;
+}
+
+.widget-container .content, .widget-content, .sw-widget-container .content {
+  border: #ccc 1px solid;
+}

@@ -13,9 +13,9 @@ function mapInit() {
   $(document).ready(function() {
     var mymap = L.map('mapid', {
       scrollWheelZoom: false
-    }).setView([38.980, -77.017], 10);
+    }).setView([38.953, -77.456], 10);
 
-    var marker = L.marker([38.780, -77.017], {
+    var marker = L.marker([39.084, -77.475], {
       riseOnHover: true
     }).addTo(mymap);
 
@@ -23,23 +23,15 @@ function mapInit() {
       riseOnHover: true
     }).addTo(mymap);
 
-    var bwi = L.marker([39.177, -76.668], {
-      riseOnHover: true
-    }).addTo(mymap);
-
     var rr = L.marker([38.851294, -77.040282], {
       riseOnHover: true
     }).addTo(mymap);
 
-    marker.bindTooltip("<strong>Gaylord National Resort & Convention Center</strong><br/>TravelConnect 2018<br/>", {
+    marker.bindTooltip("<strong>Lansdowne Resort and Spa</strong><br/>TravelConnect 2019<br/>", {
       permanent: true
     }).openTooltip();
 
     dulles.bindTooltip("<strong>Washington Dulles International Airport</strong><br/>IAD<br/>", {
-      permanent: true
-    }).openTooltip();
-
-    bwi.bindTooltip("<strong>Balitmore-Washington International Airport</strong><br/>BWI<br/>", {
       permanent: true
     }).openTooltip();
 
