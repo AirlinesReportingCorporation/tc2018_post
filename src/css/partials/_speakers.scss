@@ -1,0 +1,65 @@
+.speakersPage {
+  background: url('https://www2.arccorp.com/globalassets/home2/2018/homepage/speak-at-travelconnect.jpg') center center no-repeat;
+  background-size: cover;
+  padding:60px 0;
+}
+
+.speakers-container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.speakers {
+  max-width: 600px;
+  margin: 60px auto 0;
+  background: #ffffff;
+  z-index: 3;
+  position: relative;
+  padding: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.speakers h2 {
+  font-family: SourceSansPro-Bold;
+  padding: 0 15px;
+}
+
+.speakers-form {
+  font-size: 0;
+}
+
+.speakers-input {
+  width: 100%;
+  display: inline-block;
+}
+
+.speakers-input-inner {
+  font-size: 16px;
+  padding: 0 15px;
+}
+
+.speakers-title {
+  text-align: center;
+}
+
+.speakers-title h2 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+.speakers-title h3 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .speakers {
+    margin: 15px;
+  }
+  .speakers-input {
+    width: 100%;
+    display: block;
+  }
+}
