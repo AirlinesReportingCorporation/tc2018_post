@@ -7,6 +7,22 @@ import Vue from 'vue';
 import owlCarousel from 'owl.carousel';
 import TypeIt from 'typeit';
 import L from 'leaflet';
+import featherlight from 'featherlight';
+
+var getUrlParameter = function getUrlParameter(sParam) {
+  var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+    sURLVariables = sPageURL.split('&'),
+    sParameterName,
+    i;
+
+  for (i = 0; i < sURLVariables.length; i++) {
+    sParameterName = sURLVariables[i].split('=');
+
+    if (sParameterName[0] === sParam) {
+      return sParameterName[1] === undefined ? true : sParameterName[1];
+    }
+  }
+};
 
 function mapInit() {
 
@@ -92,7 +108,47 @@ list.push($("#quotes").offset().top);
 list.push($("#social").offset().top);
 list.push($("#contact").offset().top);
 
+//form pop-up message set-up
+var a = "<div class='fl-title'><div class='animated bounce'><img src='/globalassets/home2/thank-you/carrier.png'></div></div>";
 
+var b = "<div class='fl-title'><div class='animated bounce'><img src='/globalassets/home2/thank-you/distribution.png'></div></div>";
+
+var c = "<div class='fl-title'><div class='animated bounce'><img src='/globalassets/home2/thank-you/EMDs.png'></div></div>";
+
+var e = "<div class='submission'><h3>Thank you for your interest in becoming a sponsor! <h3/>We look forward to working with you at TravelConnect 2019.</div>";
+
+var f = "<div class='submission'><h3>Thank you for your interest in becoming a speaker! <h3/>We will contact you when we begin the content selection process for TravelConnect 2019.</div>";
+
+var g = "<div class='submission'><h3>You are now connected! <h3/>We’ll keep you informed on the latest TravelConnect 2019 updates.</div>";
+
+var tcVid = "<iframe width='' height='100%' src='https://www.youtube.com/embed/j_JHHI-KRpE?rel=0&amp;showinfo=0&autoplay=1' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>";
+
+e = b + e;
+f = a + f;
+g = c + g;
+
+$.featherlight.defaults.root = $(".featherlight-holder");
+
+//get param function
+$(document).ready(function() {
+  if (getUrlParameter("sponsors") == "true") {
+    $.featherlight($(e), {});
+  }
+
+  if (getUrlParameter("connect") == "true") {
+    $.featherlight($(g), {});
+  }
+
+  if (getUrlParameter("speakers") == "true") {
+    $.featherlight($(f), {});
+  }
+
+  $(".tc-video").click(function() {
+    $.featherlight($(tcVid), {
+      root: ".featherlight-video-holder"
+    });
+  });
+});
 $(".veriticalNavItem").hover(function() {
   $(this).find(".navItemText").show();
 });
