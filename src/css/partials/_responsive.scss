@@ -45,6 +45,16 @@
       font-size: 2rem;
     }
   }
+  .verticalNavigation {
+    display: none;
+  }
+  .tcContainer .awards .awardwinner-content {
+    min-height: 1px;
+    height: auto;
+  }
+  .highlights .sticky-top span {
+    font-size: 1rem !important;
+  }
 }
 @media screen and (max-width:768px) {
   .highlights-inner h2 {
@@ -88,5 +98,11 @@
   }
   .verticalNavigation {
     display: none;
+  }
+  .highlights .sticky-top span {
+    font-size: 1.5rem !important;
+  }
+  .register-logo {
+    font-size: 1.5rem;
   }
 }
