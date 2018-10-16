@@ -40,7 +40,8 @@
 
 [class=" 6433"],
 [class=" 10290"],
-[class=" 9050"] {
+[class=" 9050"],
+[class=" 10729"] {
   .tcContainer.tcContainerTop {
     top: -94px;
     bottom: -94px;
@@ -112,12 +113,10 @@
 
   .tcJumbotron {
     position: relative;
-    background: #040406 url("https://www2.arccorp.com/globalassets/home2/2018/postsite/tcJumbo6.jpg") left bottom no-repeat;
-    background-attachment: fixed;
+    background: #040406 url("https://www2.arccorp.com/globalassets/home2/2018/postsite/travelconnect19-jumbotron.jpg") center left no-repeat;
+    background-size: cover;
     height: 700px;
     vertical-align: middle;
-    background-position-x: 250px;
-    background-position-y: 200px;
   }
 
   .tcJumbotron-container {
@@ -264,7 +263,7 @@
       background: #ffffff;
       color: #333333;
       padding: 25px 35px;
-      min-height: 615px;
+      min-height: 630px;
     }
   }
 
