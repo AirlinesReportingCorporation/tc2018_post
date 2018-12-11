@@ -121,7 +121,7 @@ var f = "<div class='submission'><h3>Thank you for your interest in becoming a s
 
 var g = "<div class='submission'><h3>You are now connected! <h3/>We’ll keep you informed on the latest TravelConnect 2019 updates.</div>";
 
-var tcVid = "<iframe width='' height='100%' src='https://www.youtube.com/embed/j_JHHI-KRpE?rel=0&amp;showinfo=0&autoplay=1' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>";
+var tcVid = "<iframe width='' height='100%' src='https://www.youtube.com/embed/a9Kk3P1HUtw?rel=0&amp;showinfo=0&autoplay=1' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>";
 
 e = b + e;
 f = a + f;
@@ -129,8 +129,12 @@ g = c + g;
 
 $.featherlight.defaults.root = $(".featherlight-holder");
 
+//set popup for TravelConnect Video
+
+
 //get param function
 $(document).ready(function() {
+
   if (getUrlParameter("sponsors") == "true") {
     $.featherlight($(e), {});
   }
@@ -149,6 +153,7 @@ $(document).ready(function() {
     });
   });
 });
+
 $(".veriticalNavItem").hover(function() {
   $(this).find(".navItemText").show();
 });

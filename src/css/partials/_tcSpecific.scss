@@ -12,6 +12,7 @@
 
 .tcHomepage {
   position: relative;
+
   .verticalNavigation {
     position: fixed;
     z-index: 4;
@@ -23,19 +24,39 @@
     .veriticalNavItem {
       cursor: pointer;
       margin-bottom: 10px;
-      opacity: .6;
+      opacity: 0.6;
+
       &:hover {
-        opacity:1;
+        opacity: 1;
       }
     }
+
     .navItemText {
       font-family: SourceSansPro-Bold, SourceSansPro-Regular, helvetica, arial, sans-serif;
       display: none;
       padding-left: 10px;
     }
+
     i {
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
+  }
+
+  .tcJumbotron .tc-video {
+    position: relative;
+    padding-left: 65px !important;
+  }
+
+  .tcJumbotron .tc-video:before {
+    position: absolute;
+    content: '\F04B';
+    font-family: FontAwesome;
+    left: 0;
+    top: 1px;
+    padding-top: 17px;
+    width: 50px;
+    border-right: 1px solid #2a2f76;
+    height: 52px;
   }
 }
 
@@ -114,10 +135,14 @@
 
   .tcJumbotron {
     position: relative;
-    background: #040406 url("https://www2.arccorp.com/globalassets/home2/2018/postsite/travelconnect19-jumbotron.jpg") center left no-repeat;
+    background: #040406 url("https://www2.arccorp.com/globalassets/home2/2018/postsite/travelconnect19-jumbotron-3.jpg?1") center center no-repeat;
     background-size: cover;
     height: 700px;
     vertical-align: middle;
+
+    .background-opacity {
+      background: none !important;
+    }
   }
 
   .tcJumbotron-container {
@@ -125,11 +150,14 @@
     display: table;
     vertical-align: middle;
     height: 100%;
-    max-width: 700px;
-    margin: 0 auto;
+    max-width: 1170px;
     z-index: 3;
-    text-align: center;
+    text-align: left;
     color: #ffffff;
+  }
+
+  .tcJumbotron-inner {
+    max-width: 700px;
   }
 
   .tcJumbotron-content {
@@ -189,7 +217,7 @@
   }
 
   .tcQuote {
-    background: url('https://www2.arccorp.com/globalassets/home2/2018/postsite/tcJumbo2.jpg') no-repeat center center;
+    background: url("https://www2.arccorp.com/globalassets/home2/2018/postsite/tcJumbo2.jpg") no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     padding: 60px 0;
@@ -203,19 +231,21 @@
       font-family: Oswald-Bold, SourceSansPro-Bold, helvetica, arial, sans-serif;
       margin-bottom: 60px;
       font-size: 2.6rem;
+
       .travelconnect-title::after {
         font-size: 1.5rem;
         content: "\e920";
         font-family: 'icomoon' !important;
         margin-left: 10px;
       }
-
     }
+
     .tcQuoteItem {
       position: relative;
       min-height: 360px;
     }
-    .quote-name{
+
+    .quote-name {
       position: absolute;
       bottom: 0;
       font-size: 1.2rem;
@@ -260,6 +290,7 @@
       display: block;
       width: 100%;
     }
+
     .awardwinner-content {
       background: #ffffff;
       color: #333333;
